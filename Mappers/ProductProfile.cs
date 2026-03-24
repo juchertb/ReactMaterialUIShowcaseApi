@@ -18,7 +18,16 @@ namespace ReactMaterialUIShowcaseApi.Mapping
                 .ForMember(dest => dest.color_name, opt => opt.MapFrom(src => src.Color.Name));
 
             CreateMap<ProductDto, Product>()
-                .ForMember(dest => dest.Tags, opt => opt.Ignore())
+                .ForMember(dest => dest.Tags, opt => opt.MapFrom(src =>
+                    src.Tags == null
+                        ? new List<ProductTag>()
+                        : src.Tags.Select(tagName => new ProductTag
+                        {
+                            Tag = tagName,
+                            // ProductId and Product will be handled by EF Core 
+                            // or the parent mapping context.
+                        }).ToList()
+                    ))
                 .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.category_id))
                 //.ForMember(dest => dest.Category.Name, opt => opt.MapFrom(src => src.category_name))
                 .ForMember(dest => dest.CollectionId, opt => opt.MapFrom(src => src.collection_id))

@@ -13,7 +13,6 @@ using ReactMaterialUIShowcaseApi.Repositories;
 using ReactMaterialUIShowcaseApi.Data;
 using ReactMaterialUIShowcaseApi.Helpers;
 using ReactMaterialUIShowcaseApi.Models;
-//using ReactMaterialUIShowcaseApi.Repositories.Supporting;
 using ReactMaterialUIShowcaseApi.Resources;
 using ReactMaterialUIShowcaseApi.Services;
 using Serilog;
@@ -35,9 +34,6 @@ builder.Host.UseSerilog();
 
 // Bind AppSettings section
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-
-//Set Oracle environment variable to the location of the RPMS specific TnsNames.ora and SqlNet.ora files. 
-//OracleConfiguration.TnsAdmin = builder.Environment.ContentRootPath + builder.Configuration.GetValue<string>("AppSettings:OracleTnsNamesAndSqlNetLocationShort");
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -122,9 +118,6 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IUserContextService, UserContextService>();
 
 builder.Services.AddMemoryCache();
-
-// Register supporting data access classes
-//builder.Services.AddScoped<IContextDataProvider, ContextDataProvider>();
 
 // Add localization services
 builder.Services.AddLocalization();// (options => options.ResourcesPath = "Resources");

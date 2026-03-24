@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-//using Oracle.ManagedDataAccess.Client;
-//using Oracle.ManagedDataAccess.Types;
 using ReactMaterialUIShowcaseApi.Data;
 using ReactMaterialUIShowcaseApi.Helpers;
 using ReactMaterialUIShowcaseApi.Interfaces;

@@ -3,6 +3,7 @@ using AutoMapper;
 using ReactMaterialUIShowcaseApi.Dtos;
 using ReactMaterialUIShowcaseApi.Services.Query;
 using ReactMaterialUIShowcaseApi.Interfaces;
+using ReactMaterialUIShowcaseApi.Entities;
 
 namespace ReactMaterialUIShowcaseApi.Controllers
 {
@@ -69,14 +70,12 @@ namespace ReactMaterialUIShowcaseApi.Controllers
             if (id != dto.Id)
                 return BadRequest("ID mismatch.");
 
-            var entity = await _repository.GetByIdAsync(id);
+            var entity = await _repository.GetSiteProfileWithDetailsAsync(id);
 
             if (entity == null)
                 return NotFound();
 
-            _mapper.Map(dto, entity);
-
-            _repository.Update(entity);
+             _repository.Update(entity, dto);
             await _repository.SaveChangesAsync();
 
             return NoContent();
