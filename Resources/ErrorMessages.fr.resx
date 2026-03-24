@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeliverableNotFound" xml:space="preserve">
+    <value>Livrable non trouvé</value>
+  </data>
+  <data name="DeliverableIdMismatch" xml:space="preserve">
+    <value>Incohérence de l'identifiant du livrable</value>
+  </data>
+  <data name="UnexpectedUpdateError" xml:space="preserve">
+    <value>Une erreur inattendue s'est produite lors de la mise à jour du livrable.</value>
+  </data>
+  <data name="GenericServerError" xml:space="preserve">
+    <value>Une erreur s'est produite lors du traitement de votre demande.</value>
+  </data>
+  <data name="FileRequired" xml:space="preserve">
+    <value>Le fichier est requis.</value>
+  </data>
+  <data name="ContractNotFound" xml:space="preserve">
+    <value>Contrat non trouvé</value>
+  </data>
+  <data name="DesignateMaxLength" xml:space="preserve">
+    <value>Le désigné ne peut pas dépasser 100 caractères</value>
+  </data>
+  <data name="DesignateEmailMaxLength" xml:space="preserve">
+    <value>L’adresse courriel du désigné ne peut pas dépasser 100 caractères</value>
+  </data>
+  <data name="DesignateEmailInvalid" xml:space="preserve">
+    <value>L’adresse courriel du désigné doit être valide (utilisateur@serveur.com)</value>
+  </data>
+  <data name="DesignatePhoneInvalid" xml:space="preserve">
+    <value>Le numéro de téléphone du désigné doit être valide (123-456-7890)</value>
+  </data>
+  <data name="DesignatePhoneMaxLength" xml:space="preserve">
+    <value>Le numéro de téléphone du désigné ne peut pas dépasser 30 caractères</value>
+  </data>
+  <data name="DeliverableTypeCodeNumeric" xml:space="preserve">
+    <value>Le code du type de livrable doit être numérique.</value>
+  </data>
+  <data name="DeliverableTypeCodeMaxLength" xml:space="preserve">
+    <value>Le code du type de livrable ne peut pas dépasser 5 chiffres.</value>
+  </data>
+  <data name="FiscalYearCodeMaxLength" xml:space="preserve">
+    <value>Le code de l'exercice financier ne peut pas dépasser 8 caractères.</value>
+  </data>
+  <data name="FiscalYearCodeNumeric" xml:space="preserve">
+    <value>Le code de l'exercice financier doit être numérique.</value>
+  </data>
+  <data name="ContractCodeMaxLength" xml:space="preserve">
+    <value>Le code du contrat ne peut pas dépasser 32 caractères.</value>
+  </data>
+  <data name="PortfolioCodeMaxLength" xml:space="preserve">
+    <value>Le code du portefeuille ne peut pas dépasser 5 caractères.</value>
+  </data>
+  <data name="PrimaryBuildingCodeMaxLength" xml:space="preserve">
+    <value>Le code du bâtiment principal ne peut pas dépasser 32 caractères.</value>
+  </data>
+  <data name="SecondaryBuildingCodeMaxLength" xml:space="preserve">
+    <value>Le code du bâtiment secondaire ne peut pas dépasser 32 caractères.</value>
+  </data>
+  <data name="LeaseCodeMaxLength" xml:space="preserve">
+    <value>Le code du bail ne peut pas dépasser 8 caractères.</value>
+  </data>
+  <data name="ProjectCodeMaxLength" xml:space="preserve">
+    <value>Le code du projet ne peut pas dépasser 13 caractères.</value>
+  </data>
+  <data name="MonthIdRange" xml:space="preserve">
+    <value>Le mois doit être compris entre 1 et 12.</value>
+  </data>
+  <data name="UsernameMinLength" xml:space="preserve">
+    <value>Le nom d'utilisateur doit comporter au moins 8 caractères.</value>
+  </data>
+  <data name="UsernameMaxLength" xml:space="preserve">
+    <value>Le nom d'utilisateur ne peut pas dépasser 30 caractères.</value>
+  </data>
+  <data name="PasswordMinLength" xml:space="preserve">
+    <value>Le mot de passe doit comporter au moins 8 caractères.</value>
+  </data>
+  <data name="PasswordMaxLength" xml:space="preserve">
+    <value>Le mot de passe ne peut pas dépasser 50 caractères.</value>
+  </data>
+  <data name="LanguageInvalid" xml:space="preserve">
+    <value>La langue doit être 1 pour l'anglais ou 2 pour le français. 0 sélectionne l'anglais par défaut.</value>
+  </data>
+  <data name="AttachmentNotFound" xml:space="preserve">
+    <value>Pièce jointe non trouvée</value>
+  </data>
+  <data name="AttachmentContentNotFound" xml:space="preserve">
+    <value>Contenu de la pièce jointe non trouvé</value>
+  </data>
+  <data name="FileTypeNotAllowed" xml:space="preserve">
+    <value>Type de fichier non autorisé</value>
+  </data>
+  <data name="LoggedOutAndRefreshTokenInvalidated" xml:space="preserve">
+    <value>Déconnexion effectuée et jeton d'actualisation invalidé.</value>
+  </data>
+  <data name="InvalidClientRequest" xml:space="preserve">
+    <value>Requête client invalide</value>
+  </data>
+  <data name="InvalidAccessOrRefreshToken" xml:space="preserve">
+    <value>Jeton d'accès ou jeton d'actualisation invalide</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Utilisateur non trouvé</value>
+  </data>
+  <data name="InvalidOrExpiredRefreshToken" xml:space="preserve">
+    <value>Jeton d'actualisation invalide ou expiré</value>
+  </data>
+  <data name="RefreshTokenRequired" xml:space="preserve">
+    <value>Le jeton d'actualisation est requis.</value>
+  </data>
+  <data name="GenericProcessingError" xml:space="preserve">
+    <value>Une erreur s'est produite lors du traitement de votre demande.</value>
+  </data>
+  <data name="DeliverableIdQueryParameterRequired" xml:space="preserve">
+    <value>Le paramètre de requête deliverableId est requis.</value>
+  </data>
+  <data name="RequestBodyRequired" xml:space="preserve">
+    <value>Le corps de la requête est requis.</value>
+  </data>
+</root>
